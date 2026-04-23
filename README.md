@@ -1,8 +1,6 @@
-# debian_desktop
-Debian minimal on my laptop X1 gen 10
-
-
 # Debian + dwm + Battery Optimization Setup (ThinkPad X1 Gen 10)
+
+> Debian minimal on my laptop X1 gen 10
 
 ## 1. Base System Installation
 
