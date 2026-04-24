@@ -2,9 +2,29 @@
 
 > Antix on my laptop X1 gen 10
 
+
 ## 1. Base System Installation
 
 Install Antix minimal
+
+### Network
+
+vi /etc/wpa_supplicant/wpa_supplicant.conf
+```
+ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
+update_config=1
+
+network={
+    ssid="YOUR_WIFI_NAME"
+    psk="YOUR_PASSWORD"
+}
+```
+
+vi /etc/rc.local
+```bash
+wpa_supplicant -B -i wlan0 -c /etc/wpa_supplicant/wpa_supplicant.conf
+dhclient wlan0
+```
 
 Then:
 
@@ -34,7 +54,11 @@ startx
 ```
 
 
+## 3. 
 
+```bash
+apt install openssh-server rsync
+```
 
 
 ------------------------------------------------------------------------
