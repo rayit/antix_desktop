@@ -1,12 +1,10 @@
 # Antix + dwm + Battery Optimization Setup (ThinkPad X1 Gen 10)
 
-> Debian minimal on my laptop X1 gen 10
-> I used Antix as a start
+> Antix on my laptop X1 gen 10
 
 ## 1. Base System Installation
 
-Install Debian minimal: - No desktop environment - Select only "standard
-system utilities"
+Install Antix minimal
 
 Then:
 
