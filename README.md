@@ -44,7 +44,11 @@ Start:
 ``` bash
 startx
 ```
+> To compile dwm
 
+```bash
+sudo apt install build-essential libx11-dev libxft-dev libxinerama-dev
+```
 
 ## 3. 
 
