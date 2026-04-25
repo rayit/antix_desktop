@@ -1,11 +1,11 @@
-# Antix + dwm + Battery Optimization Setup (ThinkPad X1 Gen 10)
+# Debian + dwm + Battery Optimization Setup (ThinkPad X1 Gen 10)
 
-> Antix on my laptop X1 gen 10
+> Debian on my laptop X1 gen 10
 
 
 ## 1. Base System Installation
 
-Install Antix minimal
+Install Debian minimal (unselect gnome)
 
 ### Network
 
@@ -19,14 +19,6 @@ network={
     psk="YOUR_PASSWORD"
 }
 ```
-
-vi /etc/rc.local
-```bash
-wpa_supplicant -B -i wlan0 -c /etc/wpa_supplicant/wpa_supplicant.conf
-dhcpcd wlan0
-```
-
-Then:
 
 ``` bash
 sudo apt update
